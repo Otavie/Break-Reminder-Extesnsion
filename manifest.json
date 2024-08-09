@@ -4,12 +4,15 @@
     "description": "Reminds you to take a break after 45 minutes.",
     "version": "1.0",
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "type": "module"
     },
     "permissions": [
         "notifications",
         "alarms",
-        "idle"
+        "idle",
+        "alarms",
+        "storage"
     ],
     "icons": {
         "16": "images/alarm-16.png",

@@ -38,10 +38,12 @@
 }
 
 #duration-input {
-  padding: 0.35rem;
+  padding: 0.25rem 0.5rem;
   outline: none;
   font-size: 0.95rem;
+  font-size: 0.9rem;
   width: 130px;
+  font-weight: 500;
 }
 
 .btn {
