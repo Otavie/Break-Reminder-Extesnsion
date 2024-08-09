@@ -3,6 +3,11 @@ const durationInput = document.getElementById("duration-input")
 
 const saveAndStart = () => {
     const duration = parseInt(durationInput.value, 10)
+
+    if (isNaN(duration) || duration <= 0) {
+        console.log("Enter a valid duration.")
+    }
+
     console.log("Save BTN clicked")
     // Save Duration in Chrome Storage
     chrome.storage.local.set({ breakInterval: duration }, () => {
