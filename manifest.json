@@ -18,5 +18,9 @@
         "64": "images/alarm-64.png",
         "96": "images/alarm-96.png",
         "128": "images/alarm-128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/alarm-32.png"
     }
 }

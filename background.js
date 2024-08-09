@@ -1,6 +1,6 @@
 // Constants Defining the Break Name, Interval and Idle Threshold
 const BREAK_ALARM_NAME = "BREAK_ALARM_NAME"
-const BREAK_INTERVAL_MINUTES = 2
+const BREAK_INTERVAL_MINUTES = 20
 
 // Flag to Check if the Alarm is Currently Active
 let isAlarmActive = false
