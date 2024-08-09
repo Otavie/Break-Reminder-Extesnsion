@@ -8,7 +8,8 @@
     },
     "permissions": [
         "notifications",
-        "alarms"
+        "alarms",
+        "idle"
     ],
     "icons": {
         "16": "images/alarm-16.png",
