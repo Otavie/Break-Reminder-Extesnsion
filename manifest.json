@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Break Reminder",
+    "description": "Reminds you to take a break after 45 minutes.",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "notifications",
+        "alarms"
+    ],
+    "icons": {
+        "16": "images/alarm-16.png",
+        "32": "images/alarm-32.png",
+        "48": "images/alarm-48.png",
+        "64": "images/alarm-64.png",
+        "96": "images/alarm-96.png",
+        "128": "images/alarm-128.png"
+    }
+}
