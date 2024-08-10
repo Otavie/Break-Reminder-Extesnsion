@@ -14,7 +14,6 @@ const saveAndStart = () => {
         errorMessage.style.display = "none"
     }
 
-    console.log("Save BTN clicked")
     // Save Duration in Chrome Storage
     chrome.storage.local.set({ breakInterval: duration }, () => {
         console.log(`Break interval set to ${duration} minutes.`)
@@ -24,7 +23,6 @@ const saveAndStart = () => {
 
 const stopReminder = () => {
     chrome.alarms.clearAll()
-    console.log("reminder stopped")
 }
 
 saveBTN.onclick = saveAndStart
