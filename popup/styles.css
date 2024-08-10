@@ -58,6 +58,7 @@
   color: #FFFFFF;
   font-weight: 500;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .save-btn {
