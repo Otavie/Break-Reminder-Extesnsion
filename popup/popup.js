@@ -8,7 +8,6 @@ const saveAndStart = () => {
 
     if (isNaN(duration) || duration < 1) {
         errorMessage.style.display = "flex"
-        console.log("Enter a valid number")
         return;
     } else {
         errorMessage.style.display = "none"
@@ -22,7 +21,7 @@ const saveAndStart = () => {
 }
 
 const stopReminder = () => {
-    chrome.alarms.clearAll()
+    chrome.runtime.sendMessage({ event: "stopBreakTimer" })
 }
 
 saveBTN.onclick = saveAndStart
