@@ -28,7 +28,7 @@ chrome.idle.onStateChanged.addListener((newState) => {
         })
         // Stop Timer if User is Idle and the Alarm is Active
     } else if (newState === "idle" && isAlarmActive) {
-        console.log("User is idle or away. Stop the break reminder timer.")
+        console.log("User is idle or away. Break reminder timer is stopped!")
         stopAlarm()
     }
 })   

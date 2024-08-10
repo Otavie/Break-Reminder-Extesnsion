@@ -45,13 +45,34 @@
   font-weight: 500;
 }
 
+.btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .btn {
   font-size: 0.95rem;
   padding: 0.5rem;
   color: #FFFFFF;
   font-weight: 500;
+  border-radius: 10px;
 }
 
 .save-btn {
   background-color: #008000;
+}
+
+.stop-btn {
+  background-color: #ff0000;
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: 0.85rem;
+  width: 100%;
+  justify-content: flex-end;
+  font-weight: 500;
+  display: none;
 }
