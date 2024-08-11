@@ -31,7 +31,6 @@ const saveAndStart = () => {
 
     // Save Duration in Chrome Storage
     chrome.storage.local.set({ breakInterval: duration }, () => {
-        console.log(`Break interval set to ${duration} minutes.`)
         chrome.runtime.sendMessage({ event: "startBreakTimer" })
 
         displayMessage(startMessage, stopMessage)
