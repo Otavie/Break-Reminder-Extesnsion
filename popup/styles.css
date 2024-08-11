@@ -61,12 +61,34 @@
   cursor: pointer;
 }
 
+.btn:disabled {
+  background-color: gray;
+  color: #CCC;
+  cursor: not-allowed;
+}
+
 .save-btn {
   background-color: #008000;
 }
 
 .stop-btn {
   background-color: #ff0000;
+}
+
+.notification {
+  margin-top: -0.5rem;
+  display: none;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.start-message {
+  color: #ff0000;
+}
+
+.stop-message {
+  color: #008000;
 }
 
 .errorMessage {
